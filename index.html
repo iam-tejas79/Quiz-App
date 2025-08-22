@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <!-- SUBJECT SELECTION -->
+    <section id="subject-screen" class="screen active">
+      <h1>⚡ Quiz App</h1>
+      <p class="subtitle">Choose a subject to begin</p>
+      <div class="subject-grid">
+        <button class="btn subject-btn" data-subject="html">HTML</button>
+        <button class="btn subject-btn" data-subject="css">CSS</button>
+        <button class="btn subject-btn" data-subject="js">JavaScript</button>
+      </div>
+      <a class="link" href="leaderboard.html">🏆 View Leaderboard</a>
+    </section>
+
+    <!-- QUIZ -->
+    <section id="quiz-screen" class="screen">
+      <div class="quiz-header">
+        <h2 id="quiz-title">Quiz</h2>
+        <div id="timer" class="timer">⏳ <span id="time">15</span>s</div>
+      </div>
+
+      <h3 id="question-text" class="question"></h3>
+      <div id="options" class="options"></div>
+
+      <button id="next-btn" class="btn next" disabled>Next</button>
+    </section>
+
+    <!-- SCORE / SAVE -->
+    <section id="score-screen" class="screen">
+      <h2>Results</h2>
+      <p class="score-line">Score: <strong id="score"></strong></p>
+      <input type="text" id="username" class="input" placeholder="Enter your name"/>
+      <button id="save-score-btn" class="btn">Save to Leaderboard</button>
+      <div class="row gap">
+        <a href="leaderboard.html" class="btn ghost">View Leaderboard</a>
+        <button id="restart-btn" class="btn">Restart</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

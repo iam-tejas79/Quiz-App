@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leaderboard</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🏆 Leaderboard</h1>
+
+    <div class="filters">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="html">HTML</button>
+      <button class="chip" data-filter="css">CSS</button>
+      <button class="chip" data-filter="js">JavaScript</button>
+    </div>
+
+    <ul id="leaderboard-list" class="leaderboard"></ul>
+
+    <div class="row gap">
+      <a href="index.html" class="btn">Back to Quiz</a>
+      <button id="clear-btn" class="btn ghost">Clear Leaderboard</button>
+    </div>
+  </div>
+
+  <script src="leaderboard.js"></script>
+</body>
+</html>
